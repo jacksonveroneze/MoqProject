@@ -56,3 +56,6 @@ jobs:
 
       - name: Build
         run: dotnet build --configuration Release --no-restore
+      
+      - name: LS
+        run: ls -la
