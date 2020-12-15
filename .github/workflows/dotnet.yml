@@ -57,7 +57,6 @@ jobs:
           /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
           /k:"jacksonveroneze_MoqProject" \
           /d:sonar.cs.opencover.reportsPaths="MoqProject.Tests/coverage.opencover.xml"
-          /v:${{ GITHUB_RUN_ID }}
           
           dotnet build --configuration Release --no-restore
           
